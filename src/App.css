@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.clock-app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+  background: linear-gradient(135deg, #dbeafe, #eef2ff);
+}
+
+.clock-card {
+  width: min(100%, 500px);
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.clock-card h1 {
+  margin-bottom: 8px;
+  font-size: 42px;
+  font-weight: 700;
+  color: #212529;
+}
+
+.clock-card .lead {
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+/* Analog Clock */
+
+.analog-clock {
+  width: 280px;
+  height: 280px;
+  margin: 30px auto;
+  position: relative;
+
+  border: 10px solid #212529;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 5px #e9ecef,
+    0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Clock Numbers */
+
+.number {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 700;
+  color: #212529;
+}
+
+.number-12 {
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.number-3 {
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.number-6 {
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.number-9 {
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Clock Hands */
+
+.hand {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+
+  transform-origin: bottom center;
+  border-radius: 10px;
+}
+
+.hour-hand {
+  width: 7px;
+  height: 70px;
+  background: #212529;
+}
+
+.minute-hand {
+  width: 5px;
+  height: 95px;
+  background: #495057;
+}
+
+.second-hand {
+  width: 2px;
+  height: 105px;
+  background: #dc3545;
+}
+
+/* Center Dot */
+
+.clock-center {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background: #dc3545;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+
+/* Digital Time */
+
+.clock-card p.lead {
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+.clock-card strong {
+  color: #212529;
+}
+
+/* Mobile */
+
+@media (max-width: 400px) {
+  .clock-card {
+    padding: 25px 15px;
+  }
+
+  .clock-card h1 {
+    font-size: 34px;
+  }
+
+  .analog-clock {
+    width: 230px;
+    height: 230px;
+  }
+
+  .hour-hand {
+    height: 58px;
+  }
+
+  .minute-hand {
+    height: 78px;
+  }
+
+  .second-hand {
+    height: 88px;
+  }
+
+  .number {
+    font-size: 20px;
+  }
+}
