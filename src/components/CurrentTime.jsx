@@ -27,7 +27,8 @@ const CurrentTime = () => {
           year: "numeric",
         })}
       </strong>{" "}
-      - Current Time: <strong> {time.toLocaleTimeString()}</strong>
+      <br />
+      Current Time: <strong> {time.toLocaleTimeString()}</strong>
     </p>
   );
 };
