@@ -7,6 +7,7 @@ import AnalogClock from "./components/AnalogClock";
 import CurrentTime from "./components/CurrentTime";
 import Mode from "./components/Mode";
 import Stopwatch from "./components/Stopwatch";
+import AlarmClock from "./components/AlarmClock";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
 
         <CurrentTime />
         <Stopwatch />
+        <AlarmClock />
       </div>
     </div>
   );
