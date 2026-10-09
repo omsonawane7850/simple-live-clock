@@ -1,19 +1,19 @@
 # Simple Live Clock
 
-A simple live clock built using **Vite and React.js**.
-
-Displays the current date and time with a live analog clock that updates automatically every second.
+A live clock application built using **React.js and Vite**. It displays the current date and time alongside an animated analog clock and includes a stopwatch with lap tracking.
 
 ## Features
 
-* Displays current date and time
-* Live analog clock
-* Updates every second
+* Displays the current date and time
+* Live analog clock that updates every second
 * Dark and light mode toggle
+* Stopwatch with Start, Pause, Resume, and Reset controls
+* Lap time tracking
 * Responsive design for mobile and desktop
 * Glassmorphism-based user interface
-* Uses `useState` and `useEffect`
-* Uses `setInterval()` and `clearInterval()`
+* CSS Modules for component-specific styling
+* Uses React Hooks such as `useState`, `useEffect`, and `useRef`
+* Uses `setInterval()` and `clearInterval()` for timer updates and cleanup
 
 ## Technologies
 
@@ -22,11 +22,17 @@ Displays the current date and time with a live analog clock that updates automat
 * JavaScript
 * Bootstrap
 * CSS
+* CSS Modules
 
 ## Run Locally
 
 ```bash
+git clone <your-repository-url>
+cd <your-project-folder>
 npm install
-
 npm run dev
 ```
+
+## License
+
+This project is open-source and available for learning and personal use.
