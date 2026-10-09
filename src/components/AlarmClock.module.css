@@ -1,0 +1,183 @@
+.alarm-clock {
+width: 100%;
+max-width: 450px;
+margin: 30px auto;
+padding: 25px;
+border-radius: 20px;
+background: rgba(255, 255, 255, 0.12);
+border: 1px solid rgba(255, 255, 255, 0.25);
+color: inherit;
+box-sizing: border-box;
+}
+
+.alarm-heading {
+margin-bottom: 25px;
+text-align: center;
+font-size: 1.7rem;
+font-weight: 700;
+}
+
+.alarm-form {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+.alarm-form label {
+font-size: 0.95rem;
+font-weight: 600;
+}
+
+.alarm-form input[type="time"] {
+width: 100%;
+min-height: 45px;
+padding: 10px;
+border: 1px solid #ced4da;
+border-radius: 10px;
+background: rgba(255, 255, 255, 0.9);
+color: #212529;
+font-size: 1rem;
+box-sizing: border-box;
+}
+
+.add-alarm-button,
+.dismiss-alarm-button,
+.delete-alarm-button {
+padding: 10px 16px;
+border: none;
+border-radius: 9px;
+font-size: 0.95rem;
+font-weight: 600;
+cursor: pointer;
+transition:
+transform 0.2s ease,
+opacity 0.2s ease;
+}
+
+.add-alarm-button {
+background: #198754;
+color: #fff;
+}
+
+.dismiss-alarm-button {
+background: #ffc107;
+color: #212529;
+}
+
+.delete-alarm-button {
+background: #dc3545;
+color: #fff;
+}
+
+.add-alarm-button:hover,
+.dismiss-alarm-button:hover,
+.delete-alarm-button:hover {
+transform: translateY(-2px);
+}
+
+.add-alarm-button:focus-visible,
+.dismiss-alarm-button:focus-visible,
+.delete-alarm-button:focus-visible {
+outline: 3px solid currentColor;
+outline-offset: 3px;
+}
+
+.alarm-ringing {
+margin-top: 20px;
+padding: 18px;
+border-radius: 12px;
+background: rgba(220, 53, 69, 0.15);
+border: 1px solid #dc3545;
+text-align: center;
+}
+
+.alarm-ringing p {
+margin-bottom: 12px;
+font-size: 1.1rem;
+font-weight: 700;
+}
+
+.alarm-list-section {
+margin-top: 28px;
+}
+
+.alarm-list-heading {
+margin-bottom: 15px;
+font-size: 1.2rem;
+font-weight: 700;
+}
+
+.no-alarms {
+margin: 0;
+padding: 15px 0;
+text-align: center;
+opacity: 0.7;
+}
+
+.alarm-list {
+display: flex;
+flex-direction: column;
+gap: 10px;
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+.alarm-item {
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 12px;
+padding: 14px;
+border-radius: 12px;
+background: rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.alarm-time {
+font-size: 1.2rem;
+font-weight: 700;
+font-variant-numeric: tabular-nums;
+}
+
+.alarm-toggle {
+display: flex;
+align-items: center;
+gap: 7px;
+font-size: 0.85rem;
+cursor: pointer;
+}
+
+.alarm-toggle input {
+width: 17px;
+height: 17px;
+cursor: pointer;
+accent-color: #198754;
+}
+
+@media (max-width: 480px) {
+.alarm-clock {
+padding: 18px 14px;
+}
+
+.alarm-item {
+gap: 10px;
+}
+
+.alarm-time {
+font-size: 1.1rem;
+}
+
+.delete-alarm-button {
+padding: 9px 12px;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+.add-alarm-button,
+.dismiss-alarm-button,
+.delete-alarm-button {
+transition: none;
+}
+}
