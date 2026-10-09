@@ -1,6 +1,6 @@
 # Simple Live Clock
 
-A live clock application built using **React.js and Vite**. It displays the current date and time alongside an animated analog clock and includes a stopwatch with lap tracking.
+A live clock application built using **React.js and Vite**. It displays the current date and time alongside an analog clock, stopwatch, and alarm clock.
 
 ## Features
 
@@ -9,6 +9,9 @@ A live clock application built using **React.js and Vite**. It displays the curr
 * Dark and light mode toggle
 * Stopwatch with Start, Pause, Resume, and Reset controls
 * Lap time tracking
+* Alarm clock with time selection
+* Enable, disable, and delete alarms
+* Alarm sound with a dismiss option
 * Responsive design for mobile and desktop
 * Glassmorphism-based user interface
 * CSS Modules for component-specific styling
@@ -27,8 +30,6 @@ A live clock application built using **React.js and Vite**. It displays the curr
 ## Run Locally
 
 ```bash
-git clone <your-repository-url>
-cd <your-project-folder>
 npm install
 npm run dev
 ```
